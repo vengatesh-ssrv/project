@@ -1,52 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Health-Care and OpenICE</title>
-    <script src="jsFiles/chart_plot.min.js"></script>  
+    <script src="jsFiles/chart_plot.min.js"></script>
+    <script src="jsFiles/draggable.js"></script>
     <!-- import plotly js for chart(2d,3d) -->
     <link href="style/stylesheet.css" rel="stylesheet" type="text/css"></link>
 </head>
+
 <body>
     <div class="titan-background">
         <span class="stars stars-L"></span>
         <span class="stars stars-M"></span>
         <span class="stars stars-S"></span>
-      </div>
-      <div id='pulseoximeter'></div>
-      <div id='temperature'></div>
-      <div id='humidity'></div>
-      <script>
-            var trace1 = {
-                x:['1', '2', '3'],
-                y: [90, 40, 60],
-                type: 'scatter'
-            };
-            
-            var spo2data = [trace1];
-            var tempdata = [trace1];
-            var humiditydata = [trace1];
-            
-            var spo2layout = {
-                title: 'Pulse Oximeter - SPO2',
-                showlegend: true
-            };
-
-            var templayout = {
-                title: 'Temperature - C',
-                showlegend: true
-            };
-
-            var humiditylayout = {
-                title: 'Humidity',
-                showlegend: true
-            };
-
-            Plotly.newPlot('pulseoximeter', spo2data, spo2layout, {scrollZoom: true});
-            Plotly.newPlot('temperature', tempdata, templayout, {scrollZoom: true});
-            Plotly.newPlot('humidity', humiditydata, humiditylayout, {scrollZoom: true});
+    </div>
+    <div id='pulseoximeter'></div>
+    <div id='temperature'></div>
+    <div id='humidity'></div>
+    <script>
     </script>
 </body>
+
 </html>
