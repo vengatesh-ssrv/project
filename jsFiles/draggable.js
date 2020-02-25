@@ -1,5 +1,5 @@
 
-function(ctx){
+(function(ctx){
      function dragElement(elmnt) {
         var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
         if (document.getElementById(elmnt.id + "header")) {
@@ -33,5 +33,5 @@ function(ctx){
         document.onmousemove = null;
         }
     }
-    ctx.MoveDiv = dragElement;
-}(this)
+    ctx.Project.MoveDiv = dragElement;
+})(this)
