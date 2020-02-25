@@ -33,5 +33,5 @@
         document.onmousemove = null;
         }
     }
-    ctx.Project.MoveDiv = dragElement;
+    ctx.Project = dragElement;
 })(this)
