@@ -59,7 +59,25 @@ body {
   }
 }
 
-#myDiv {
+#pulseoximeter {
+  position: relative;
+  z-index: 2;
+  padding: 104px 0 24px 0;
+  width: 95%;
+  max-width: 600px;
+  margin: auto;
+}
+
+#temperature {
+  position: relative;
+  z-index: 2;
+  padding: 104px 0 24px 0;
+  width: 95%;
+  max-width: 600px;
+  margin: auto;
+}
+
+#humidity {
   position: relative;
   z-index: 2;
   padding: 104px 0 24px 0;
