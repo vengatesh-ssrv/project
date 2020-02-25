@@ -59,7 +59,7 @@ body {
   }
 }
 
-#pulseoximeter, #temperature, #humidity, #pulseoximeterTable{
+#pulseoximeter, #temperature, #humidity, #pulseTable{
   position: relative;
   z-index: 2;
   padding: 104px 0 24px 0;
