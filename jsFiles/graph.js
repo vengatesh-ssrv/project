@@ -49,9 +49,9 @@
     }
     }]
     
-    Plotly.newPlot('pulseoximeter', spo2data, spo2layout, { scrollZoom: true });
-    Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true });
-    Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true });
-    Plotly.newPlot('pulseTable', spo2tabledata, spo2layout);
+    Plotly.newPlot('pulseoximeter', spo2data, spo2layout, { scrollZoom: true ,displaylogo: false});
+    Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true ,displaylogo: false});
+    Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true ,displaylogo: false});
+    Plotly.newPlot('pulseTable', spo2tabledata, spo2layout, {displaylogo: false});
 })(this)
 
