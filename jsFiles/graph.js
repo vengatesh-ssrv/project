@@ -1,6 +1,10 @@
 (function(ctx){
+    function rand() {
+        return Math.random();
+      }
+
     var xdata=[1,3,5,7,2];
-    var ydata=[2,3,34,33,54];
+    var ydata=[2,3,34,33,54].map(rand);
     var graphType = 'scatter';
 
     var trace1 = {
@@ -56,9 +60,24 @@
     }
     }]
     
+      
+      
+      
     Plotly.newPlot('pulseoximeter', spo2data, spo2layout, { scrollZoom: true ,displaylogo: false});
     Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true ,displaylogo: false});
     Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true ,displaylogo: false});
     Plotly.newPlot('pulseTable', spo2tabledata, spo2layout, {displaylogo: false});
+
+    var cnt = 0;
+      
+      var interval = setInterval(function() {
+      
+        Plotly.extendTraces('pulseoximeter', {
+          y: [[rand()]]
+        }, [0])
+      
+        if(++cnt === 100) clearInterval(interval);
+      }, 300);
+
 })(this)
 
