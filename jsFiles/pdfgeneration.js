@@ -1,8 +1,8 @@
 
 (function(ctx){
 
-    function generatePDF(element) {
-        var element = document.getElementById(element);
+    function generatePDF(id) {
+        var element = document.getElementById(id);
         html2pdf()
           .from(element)
           .save();
