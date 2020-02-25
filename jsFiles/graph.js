@@ -1,8 +1,12 @@
 (function(ctx){
+    var xdata=[1,3,5,7,2];
+    var ydata=[2,3,34,33,54];
+    var graphType = 'scatter';
+
     var trace1 = {
-        x: ['1', '2', '3'],
-        y: [90, 40, 60],
-        type: 'scatter'
+        x: xdata,
+        y: ydata,
+        type: graphType
     };
     
     var spo2data = [trace1];
@@ -24,10 +28,13 @@
         showlegend: true
     };
 
+    var TimeStamp=[1,1,1,1];
+    var SPO2=[2,2,2,2];
+    var HeartBeat=[3,3,3,3];
     var spo2values = [
-        [1,1,1],
-        [2,2,2],
-        [3,3,3]
+        TimeStamp,
+        SPO2,
+        HeartBeat
     ]
     
     var spo2tabledata = [{
