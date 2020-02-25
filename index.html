@@ -10,25 +10,44 @@
     <script src="jsFiles/draggable.js"></script>
     <!-- import plotly js for chart(2d,3d) -->
     <link href="style/stylesheet.css" rel="stylesheet" type="text/css"></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div class="titan-background">
-        <span class="stars stars-L"></span>
-        <span class="stars stars-M"></span>
-        <span class="stars stars-S"></span>
-    </div>
-    <div id="pulse">
-        <div id='pulseoximeter'></div>
-        <div id='pulseTable'></div>
-    </div>
-    <div id="temp">
-        <div id='temperature'></div>
-    </div>
-    <div id="humid">
-        <div id='humidity'></div>
-    </div>
-    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Health-Care and OpenICE</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Data Visualize</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">General <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Digital Format</a></li>
+                <li><a href="#">Report Generation</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Alert Setting</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+            <div class="charts">
+                <div id="pulse" class="row">
+                    <div id='pulseoximeter'></div>
+                    <div id='pulseTable'></div>
+                </div> 
+                <div id="temp">
+                    <div id='temperature'></div>
+                </div>
+                <div id="humid">
+                    <div id='humidity'></div>
+                </div>
+            </div>
+        </div>
     <script src="jsFiles/graph.js"></script>
 </body>
 
