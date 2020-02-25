@@ -8,5 +8,5 @@
           .save();
       }
 
-    ctx.PromiseRejectionEvent.PDF = generatePDF;
+    ctx.Project.PDF = generatePDF;
 })(this)
