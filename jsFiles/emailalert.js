@@ -1,4 +1,7 @@
 (function(ctx){
+    if(ctx.Project == undefined){
+        ctx.Project = {};
+    }
     function sendEmail() {
         var myEmail;
         var recipientEmail = [];
