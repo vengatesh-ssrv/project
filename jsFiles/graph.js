@@ -42,7 +42,7 @@
     }
     }]
     
-    Plotly.newPlot('pulseoximeter', spo2data);
+    Plotly.newPlot('pulseTable', spo2data);
     Plotly.newPlot('pulseoximeter', spo2data, spo2layout, { scrollZoom: true });
     Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true });
     Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true });
