@@ -34,15 +34,6 @@
     
     var spo2data = [{
     type: 'table',
-    header: {
-      values: [["<b>Timestamp</b>"], ["<b>HeartBeat</b>"],
-                   ["<b>SPO2</b>"]],
-      align: "center",
-      line: {width: 1, color: 'black'},
-      fill: {color: "grey"},
-      font: {family: "Arial", size: 12, color: "white"}
-    },
-    
     cells: {
       values: spo2values,
       align: "center",
@@ -51,7 +42,7 @@
     }
     }]
     
-    Plotly.newPlot('pulseoximeterTable', spo2data);
+    Plotly.newPlot('pulseoximeter', spo2data);
     Plotly.newPlot('pulseoximeter', spo2data, spo2layout, { scrollZoom: true });
     Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true });
     Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true });
