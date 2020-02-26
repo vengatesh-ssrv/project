@@ -30,9 +30,9 @@
         showlegend: true
     };
 
-    var TimeStamp=[1,1,1,1];
-    var SPO2=[2,2,2,2];
-    var HeartBeat=[3,3,3,3];
+    var TimeStamp=[1,1,1,1,1,1,1,1,1,1,1,11,1];
+    var SPO2=[2,2,2,2,1,1,1,2,2,2,2,2,2];
+    var HeartBeat=[3,3,3,3,3,3,3,3,3,3,3,3,3];
     var spo2values = [
         TimeStamp,
         SPO2,
