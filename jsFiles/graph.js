@@ -1,10 +1,8 @@
 (function(ctx){
-    function rand() {
-        return Math.random();
-      }
+    var Project = ctx.Project;
 
     var time = new Date();
-    var ydata=[1,2,3].map(rand);
+    var ydata=[1,2,3];
     var graphType = 'lines';
 
     var trace1 = {
@@ -67,37 +65,9 @@
     Plotly.newPlot('temperature', tempdata, templayout, { scrollZoom: true ,displaylogo: false});
     Plotly.newPlot('humidity', humiditydata, humiditylayout, { scrollZoom: true ,displaylogo: false});
     Plotly.newPlot('pulseTable', spo2tabledata, spo2layout, {displaylogo: false});
-
-    var cnt = 0;
-
-    var interval = setInterval(function() {
-
-    var time = new Date();
-
-    var update = {
-    x:  [[time]],
-    y: [[rand()]]
-    }
-
-    var olderTime = time.setMinutes(time.getMinutes() - 1);
-    var futureTime = time.setMinutes(time.getMinutes() + 1);
-
-    var minuteView = {
-            xaxis: {
-            type: 'date',
-            range: [olderTime,futureTime]
-            }
-        };
-
-    Plotly.relayout('pulseoximeter', minuteView);
-    Plotly.extendTraces('pulseoximeter', update, [0]);
-    Plotly.relayout('temperature', minuteView);
-    Plotly.extendTraces('temperature', update, [0]);
-    Plotly.relayout('humidity', minuteView);
-    Plotly.extendTraces('humidity', update, [0]);
-
-    if(++cnt === 100) clearInterval(interval);
-    }, 1000);
-
+    
+    Project.PulseUpdate();
+    Project.TemperatureUpdate();
+    Project.HumidityUpdate();
 })(this)
 
