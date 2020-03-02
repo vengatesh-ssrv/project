@@ -5,11 +5,10 @@
 
     var Project = ctx.Project;
     var emailDetails = Project.emailDetails;
-    var myEmail = emailDetails.myEmail;
-    var recipientEmail = emailDetails. doctorsmail;
-    var password = emailDetails.password;
-   
     function sendEmail(subject , emailBody, typeofalert) {
+        var myEmail = emailDetails.myEmail;
+       var recipientEmail = emailDetails. doctorsmail;
+        var password = emailDetails.password;
         Email.send({
         Host: "smtp.gmail.com",
         Username : myEmail,
