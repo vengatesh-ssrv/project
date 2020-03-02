@@ -9,5 +9,11 @@
         }
     }
 
-    Project.patientdetails ={};
+    Project.patientdetails ={
+        name : "raja",
+        dateofadmission : "20/03/2020",
+        sex : "male",
+        id : "1347",
+        mail : "raja12@gmail.com"
+    };
 })(this)
