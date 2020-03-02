@@ -28,7 +28,6 @@
       <div class="container-fluid">
         <table>
           <script src="jsFiles/adduserdetails.js"></script>
-          <form action="pages/datavisualize.html" method="POST">
             <div>
               <label for="pname">Patient name:</label>
               <input type="text" class="form-control" id="pname" placeholder="Enter Patient name" name="pname" required>  
@@ -42,7 +41,9 @@
             <input type="date" class="form-control" id="Dateofadmission" placeholder="Date of Admission" name="Dateofadmission" required>
             </div>
             <button type="submit" class="btn btn-primary" onclick="Project.addPatientdetails()">Submit</button>   
-          </form>
+            <div id = "datavisualization">
+              <a href="pages/datavisualize.html">Visualize Data </a>
+            </div>
         </table>
       </div>
 </body>

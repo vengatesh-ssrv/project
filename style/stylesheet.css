@@ -1,3 +1,7 @@
 .charts{
   padding: 10% 10% 10% 10%;
 }
+
+#datavisualization{
+  display : none;
+}
