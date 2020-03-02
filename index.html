@@ -26,7 +26,24 @@
         </div>
       </nav>
       <div class="container-fluid">
-       
+        <table>
+          <script src="jsFiles/adduserdetails.js"></script>
+          <form>
+            <div>
+              <label for="pname">Patient name:</label>
+              <input type="text" class="form-control" id="pname" placeholder="Enter Patient name" name="pname" required>  
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter Email Address" name="email" required>  
+            </div>
+            <div>
+              <label for="Dateofadmission">Date of Admission</label>
+            <input type="date" class="form-control" id="Dateofadmission" placeholder="Date of Admission" name="Dateofadmission" required>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="Project.addPatientdetails()">Submit</button>   
+          </form>
+        </table>
       </div>
 </body>
 
