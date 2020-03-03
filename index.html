@@ -76,7 +76,7 @@
         console.log("Updating Chart: ", value);
         
         // Replace the chart canvas element
-        $('#chart').replaceWith('<canvas id="chart" width="300" height="300"></canvas>');
+        $('chart').replaceWith('<canvas id="chart" width="300" height="300"></canvas>');
         
         // Draw the chart
         var ctx = $('#chart').get(0).getContext("2d");
