@@ -3,7 +3,7 @@
         ctx.Project = {}
     }
 
-    function updatechart() {
+    function updatechart(chart) {
         
         var length = chart.options.data[0].dataPoints.length;
         chart.options.title.text = "New DataPoint Added at the end";
