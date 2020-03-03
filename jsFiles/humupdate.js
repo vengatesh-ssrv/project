@@ -3,6 +3,15 @@
         ctx.Project = {}
     }
 
+    function updatechart() {
+        
+        var length = chart.options.data[0].dataPoints.length;
+        chart.options.title.text = "New DataPoint Added at the end";
+        chart.options.data[0].dataPoints.push({ y: 25 - Math.random() * 10});
+        chart.render();
+      
+        }
+
     function humupdate(){
     var hucnt = 0;
 
@@ -30,4 +39,5 @@
      }, 2000);
     }
     ctx.Project.HumidityUpdate = humupdate;
+    ctx.Project.autoupdate = updatechart;
 })(this)

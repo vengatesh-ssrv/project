@@ -137,16 +137,7 @@
             ]
           });
           chart.render();	
-
-          function updatechart() {
-        
-        var length = chart.options.data[0].dataPoints.length;
-        chart.options.title.text = "New DataPoint Added at the end";
-        chart.options.data[0].dataPoints.push({ y: 25 - Math.random() * 10});
-        chart.render();
-      
-        }
-          window.setInterval('updatechart()', 10000);
+          window.setInterval(ctx.Project.autoupdate(), 10000);
         }
         
         </script>
